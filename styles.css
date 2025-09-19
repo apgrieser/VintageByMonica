@@ -1,0 +1,194 @@
+
+
+body {
+  background-color: #1a1a1a;
+  color: #0097b2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header, .gallery h1 {
+  text-align: center;
+  font-family: 'federo', serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.intro img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.etsy-link {
+  color: #f2b963;
+  font-family: 'Federo';
+}
+
+.etsy-link:hover {
+   color: #cef4d4;
+};
+
+.intro .copy {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1.25rem;
+}
+
+
+.intro .copy h2 {
+  font-size: 2rem;
+}
+
+.intro .copy a {
+  color: #f2b963;
+}
+
+.intro .copy a:hover {
+  color: #cef4d4;
+}
+
+.divider {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px dotted #999;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.site-copyright {
+  color: #cef4d4;
+  padding: 10px;
+  font-size: 15px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.site-copyright-link {
+  color: #cef4d4;
+  text-decoration-color: fff; /* This controls underline color */
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.site-copyright-link:hover {
+  color: #cef4d4;
+  text-decoration-color: #ffffff;
+}
+
+/** Change tag to something more appropriate to specific page **/
+/* Take it out if webpage will not be using social icons */
+.site-social-icons {
+  padding-top: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.site-social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0.75rem;
+  transition: color 0.3s;
+}
+
+.site-social-icons a:hover {
+  color: #cef4d4;
+}
+
+.created-by {
+  color: #b9dfaf;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  font-size: 60%;
+  font-weight: normal;
+  padding: 10px;
+  flex-wrap: wrap;                /* Allows wrapping on smaller screens */
+  gap: 10px;                      /* Adds a little space between image and text */
+  text-align: right;
+}
+
+.created-by img {
+  max-width: 40px;
+  height: auto;
+  border-radius: 5%;
+  /* display: block; */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.created-by img:hover {
+  transform: rotate(15deg) scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.created-by h2 {
+  font-weight: lighter;
+  margin: 0;                      /* Removes default top/bottom spacing */
+  display: flex;
+  align-items: center;            /* Ensures text stays centered vertically */
+}
+
+.created-by-link {
+  color: #b9dfaf;;
+  text-decoration-color: #b9dfaf; /* This controls underline color */
+  padding-left: 5px;
+}
+
+.created-by-link:hover {
+  color: #f1f1f17e;
+  text-decoration-color: #ffffff;
+}
+
+
+/* Responsive: Stack intro on smaller screens */
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .intro .copy {
+    text-align: center;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
