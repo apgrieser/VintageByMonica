@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Vintage by Monica</title>
+  <style>
+    /* === RESET === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fdf9f2 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      background: #f5ecd9;
+      border-bottom: 8px solid #d4b483;
+    }
+
+    .hero img {
+      width: 160px;
+      margin-bottom: 1rem;
+      border: 6px solid #fff;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+      transform: rotate(-3deg);
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #b76e79;
+      color: #fff;
+      padding: 0.8rem 1.4rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #914f58;
+    }
+
+    /* === SCRAPBOOK CATEGORIES === */
+    .categories {
+      padding: 3rem 1rem;
+      background: #fdfcf7;
+    }
+
+    .categories h2 {
+      margin-bottom: 2rem;
+    }
+
+    .scrapbook {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .polaroid {
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 5px 8px 12px rgba(0,0,0,0.25);
+      transform: rotate(-2deg);
+      border: 1px solid #ddd;
+      position: relative;
+    }
+
+    .polaroid:nth-child(even) {
+      transform: rotate(2deg);
+    }
+
+    .polaroid::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 40%;
+      width: 40px;
+      height: 20px;
+      background: #f6d88c;
+      border: 1px solid #d1b468;
+      transform: rotate(-5deg);
+      z-index: 1;
+    }
+
+    .polaroid span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* === BLOG SECTION === */
+    .blog {
+      padding: 3rem 1rem;
+      background: #f5ecd9;
+      border-top: 8px solid #d4b483;
+      border-bottom: 8px solid #d4b483;
+      text-align: center;
+    }
+
+    .blog h2 {
+      margin-bottom: 1rem;
+    }
+
+    .blog-note {
+      max-width: 600px;
+      background: #fffbdc;
+      border: 1px solid #e2d59c;
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      transform: rotate(1.5deg);
+      box-shadow: 4px 6px 8px rgba(0,0,0,0.15);
+      font-family: 'Courier New', monospace;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: #3b2f2f;
+      color: #fdf9f2;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: #f6d88c;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="/images/logo.png" alt="Love Vintage by Monica logo">
+    <h1>Love Vintage by Monica</h1>
+    <div class="tagline">Antiques with Stories to Tell</div>
+    <a href="https://www.etsy.com/shop/lovevintagebymonica" class="btn">Shop on Etsy</a>
+  </section>
+
+  <!-- SCRAPBOOK CATEGORIES -->
+  <section class="categories">
+    <h2>Explore Treasures</h2>
+    <div class="scrapbook">
+      <div class="polaroid"><span>Dishes</span></div>
+      <div class="polaroid"><span>Silver</span></div>
+      <div class="polaroid"><span>Shoes</span></div>
+      <div class="polaroid"><span>Figurines</span></div>
+      <div class="polaroid"><span>Glassware</span></div>
+      <div class="polaroid"><span>Dolls</span></div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="blog">
+    <h2>From Monica’s Scrapbook</h2>
+    <div class="blog-note">
+      “Every vintage find carries whispers of the past. Join me as I share the stories behind these treasures and tips for styling them in your home.”
+    </div>
+    <a href="#" class="btn">Read the Blog</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Love Vintage by Monica</p>
+    <p>
+      <a href="mailto:monica@example.com">Email</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+</body>
+</html>
